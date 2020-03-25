@@ -7,6 +7,8 @@ let calculadora = new Calculadora();
 
 
 describe('Calculadora', () => {
+
+    //DESENVOLVEDOR
     test('Desenvolvedor e ganha 3000 ou mais', () => {
         let func = calculadora.montarSalario({
             nome: 'Joao da Silva',
@@ -32,6 +34,7 @@ describe('Calculadora', () => {
         }, 2);
     });
 
+    //DBA
     test('DBA e ganha 2000 ou mais', () => {
         let func = calculadora.montarSalario({
             nome: 'Fernando da Silva',
@@ -57,6 +60,7 @@ describe('Calculadora', () => {
         }, 2);
     });
 
+    //TESTADOR
     test('Testador e ganha 2000 ou mais', () => {
         let func = calculadora.montarSalario({
             nome: 'Paula Morandi',
@@ -79,6 +83,32 @@ describe('Calculadora', () => {
         expect(func.length).toBe(1);
         expect(func[0]).toBeDeepCloseTo({
             salario_final: 1657.5
+        }, 2);
+    });
+
+    //GERENTE
+    test('Testador e ganha 5000 ou mais', () => {
+        let func = calculadora.montarSalario({
+            nome: 'Gabriel Souza',
+            email: 'gabrielss@hotmail.com',
+            salario_base: 6700,
+            cargo: 'Gerente'
+        });
+        expect(func.length).toBe(1);
+        expect(func[0]).toBeDeepCloseTo({
+            salario_final: 4690
+        }, 2);
+    });
+    test('Gerente e ganha menos de 5000', () => {
+        let func = calculadora.montarSalario({
+            nome: 'Carlos Santos',
+            email: 'lipe@hotmail.com',
+            salario_base: 4000,
+            cargo: 'Gerente'
+        });
+        expect(func.length).toBe(1);
+        expect(func[0]).toBeDeepCloseTo({
+            salario_final: 3200
         }, 2);
     });
 });
