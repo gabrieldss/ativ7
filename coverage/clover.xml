@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1585170294022" clover="3.2.0">
-  <project timestamp="1585170294022" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1" elements="28" coveredelements="28" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+<coverage generated="1585170584964" clover="3.2.0">
+  <project timestamp="1585170584964" name="All files">
+    <metrics statements="15" coveredstatements="15" conditionals="24" coveredconditionals="24" methods="1" coveredmethods="1" elements="40" coveredelements="40" complexity="0" loc="15" ncloc="15" packages="1" files="1" classes="1"/>
     <file name="calculadora.js" path="C:\Users\gabri\Desktop\7\ativ7\lib\calculadora.js">
-      <metrics statements="11" coveredstatements="11" conditionals="16" coveredconditionals="16" methods="1" coveredmethods="1"/>
-      <line num="3" count="4" type="stmt"/>
-      <line num="4" count="4" type="cond" truecount="4" falsecount="0"/>
+      <metrics statements="15" coveredstatements="15" conditionals="24" coveredconditionals="24" methods="1" coveredmethods="1"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="4" count="6" type="cond" truecount="4" falsecount="0"/>
       <line num="5" count="1" type="stmt"/>
-      <line num="8" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="8" count="6" type="cond" truecount="4" falsecount="0"/>
       <line num="9" count="1" type="stmt"/>
-      <line num="13" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="13" count="6" type="cond" truecount="4" falsecount="0"/>
       <line num="14" count="1" type="stmt"/>
-      <line num="17" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="17" count="6" type="cond" truecount="4" falsecount="0"/>
       <line num="18" count="1" type="stmt"/>
-      <line num="22" count="4" type="stmt"/>
+      <line num="22" count="6" type="cond" truecount="4" falsecount="0"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="26" count="6" type="cond" truecount="4" falsecount="0"/>
       <line num="27" count="1" type="stmt"/>
+      <line num="31" count="6" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

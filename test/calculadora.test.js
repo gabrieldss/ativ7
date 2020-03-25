@@ -56,4 +56,29 @@ describe('Calculadora', () => {
             salario_final: 1530
         }, 2);
     });
+
+    test('Testador e ganha 2000 ou mais', () => {
+        let func = calculadora.montarSalario({
+            nome: 'Paula Morandi',
+            email: 'pmorandi@hotmail.com',
+            salario_base: 2700,
+            cargo: 'Testador'
+        });
+        expect(func.length).toBe(1);
+        expect(func[0]).toBeDeepCloseTo({
+            salario_final: 2025
+        }, 2);
+    });
+    test('Testador e ganha menos de 2000', () => {
+        let func = calculadora.montarSalario({
+            nome: 'Felipe Souza',
+            email: 'lipe@hotmail.com',
+            salario_base: 1950,
+            cargo: 'Testador'
+        });
+        expect(func.length).toBe(1);
+        expect(func[0]).toBeDeepCloseTo({
+            salario_final: 1657.5
+        }, 2);
+    });
 });
